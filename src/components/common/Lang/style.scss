@@ -1,0 +1,13 @@
+.Lang {
+  margin-left: 1rem;
+  cursor: pointer;
+  &__label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+  &__label:hover {
+    color: var(--color-white);
+  }
+}

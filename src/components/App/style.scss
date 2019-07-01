@@ -1,0 +1,48 @@
+:root {
+  --gutter: 2rem;
+  --color-primary: #953095;
+  --color-primary-light: #a133a1;
+  --color-primary-light-2: #7a277a;
+  --color-primary-dark: #36113f;
+  --color-primary-dark-2: #715a78;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey-light: #f6f5f6;
+  --color-grey: #f2f2f2;
+  --color-grey-dark: #c0b8c4;
+  --color-purple-1: #fb598f;
+  --color-purple-2: #b92df5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: sans-serif; // TODO SFProText
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000000;
+  background-color: var(--color-grey);
+}
+
+section {
+  padding: 1.4rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

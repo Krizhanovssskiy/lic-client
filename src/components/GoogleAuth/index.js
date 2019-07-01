@@ -1,6 +1,8 @@
+import sprite from '../../img/sprite.svg';
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { signIn, signOut } from '../actions';
+import { signIn, signOut } from '../../actions';
 
 class GoogleAuth extends Component {
   componentDidMount() {
@@ -38,12 +40,29 @@ class GoogleAuth extends Component {
 
   renderAuthButton() {
     const { isSignedIn } = this.props;
+    const icon = (
+      <svg className="UserNav__icon">
+        <use href={`${sprite}#icon-google`} />
+      </svg>
+    );
+    const style = { width: '200px', margin: 'auto', cursor: 'pointer' };
+
     if (isSignedIn === null) {
       return null;
     } else if (isSignedIn) {
-      return <button onClick={this.onSignOutClick}>Sign Out</button>;
+      return (
+        <button style={style} onClick={this.onSignOutClick}>
+          <p>Sign Out</p>
+          {icon}
+        </button>
+      );
     } else {
-      return <button onClick={this.onSignInClick}>Sign In with Google</button>;
+      return (
+        <button style={style} onClick={this.onSignInClick}>
+          <p>Sign In with Google</p>
+          {icon}
+        </button>
+      );
     }
   }
 
