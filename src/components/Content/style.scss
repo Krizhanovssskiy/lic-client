@@ -1,0 +1,11 @@
+.Content {
+  margin: 5rem 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+
+  & > * {
+    background-color: var(--color-white);
+    border-radius: 8px;
+  }
+}

@@ -1,3 +1,4 @@
+import './style.scss';
 import sprite from '../../img/sprite.svg';
 
 import React, { Component } from 'react';
@@ -45,20 +46,18 @@ class GoogleAuth extends Component {
         <use href={`${sprite}#icon-google`} />
       </svg>
     );
-    const style = { width: '200px', margin: 'auto', cursor: 'pointer' };
-
     if (isSignedIn === null) {
       return null;
     } else if (isSignedIn) {
       return (
-        <button style={style} onClick={this.onSignOutClick}>
+        <button onClick={this.onSignOutClick}>
           <p>Sign Out</p>
           {icon}
         </button>
       );
     } else {
       return (
-        <button style={style} onClick={this.onSignInClick}>
+        <button onClick={this.onSignInClick}>
           <p>Sign In with Google</p>
           {icon}
         </button>
@@ -67,7 +66,7 @@ class GoogleAuth extends Component {
   }
 
   render() {
-    return <div>{this.renderAuthButton()}</div>;
+    return <div className="GoogleAuth">{this.renderAuthButton()}</div>;
   }
 }
 

@@ -1,0 +1,12 @@
+.GoogleAuth {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  & > button {
+    cursor: pointer;
+    border: none;
+    width: 12rem;
+    height: 5rem;
+  }
+}
