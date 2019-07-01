@@ -1,0 +1,33 @@
+.SectionMenu {
+  &__title-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__title-box {
+    border-bottom: 2px solid var(--color-grey-dark);
+    margin-bottom: 1.4rem;
+    padding-bottom: 0.2rem;
+    color: var(--color-grey-dark);
+    cursor: pointer;
+  }
+
+  &__title-box--3 {
+    width: 33.3333%;
+  }
+
+  &__title-box--2 {
+    width: 50%;
+  }
+
+  &__title-box--active {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+  }
+}

@@ -45,7 +45,7 @@ const UserMainInfo = () => {
             <use href={`${sprite}#icon-vk`} />
           </svg>
         </li>
-        <li>
+        <li className="UserMainInfo__icon-box">
           <svg className="UserMainInfo__icon">
             <use href={`${sprite}#icon-share`} />
           </svg>

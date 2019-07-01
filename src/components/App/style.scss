@@ -46,3 +46,8 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.hide-scroll {
+  overflow-y: hidden;
+  margin-bottom: calc(-.1 * var(--gutter));
+}
