@@ -1,6 +1,6 @@
-// import lic from '../apis/lic';
-import axios from 'axios';
+import qs from 'qs';
 
+import lic from '../apis/lic';
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -26,12 +26,20 @@ export const signOut = () => {
 };
 
 export const registration = formValue => async dispatch => {
-  const response = await axios.post('https://api.lic.bz', {
+  const data = {
     key: 'yRQ2eGNJA45KfRO2',
     type: 'registration',
     username: 'mySubDomain',
     email: formValue
-  });
+  };
+  const url = '';
+  const options = {
+    method: 'POST',
+    headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    data: qs.stringify(data),
+    url,
+  };
+  const response = await lic(options);
   dispatch({ type: REGISTRATION, payload: response.data });
 };
 
