@@ -26,6 +26,10 @@
     width: 100%;
     border: 1px solid var(--color-grey-dark);
     margin-bottom: 0.5rem;
+    &::placeholder {
+      color: var(--color-grey-dark);
+    }
+
   }
 
   &__description {
@@ -49,6 +53,7 @@
   }
 
   &__terms-link {
+    font-size: 1.2rem;
     color: var(--color-primary);
     cursor: pointer;
   }
