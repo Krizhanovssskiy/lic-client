@@ -1,16 +1,21 @@
 import './style.scss';
 
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from '../common/Header';
-import GoogleAuth from '../GoogleAuth';
 import Content from '../Content';
+import Register from '../Register';
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <GoogleAuth />
-      <Content />
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Route path="/" exact component={Content} />
+          <Route path="/register" component={Register} />
+        </div>
+      </BrowserRouter>
     </div>
   );
 };

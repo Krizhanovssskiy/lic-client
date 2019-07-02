@@ -8,9 +8,10 @@ const UserDetails = () => {
 
 
   return (
-    <section className="Features">
+    <section className="UserDetails">
       <SectionMenu titles={titles} />
     </section>
+    
   );
 };
 

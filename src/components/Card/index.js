@@ -6,7 +6,9 @@ import React from 'react';
 const Card = () => {
   return (
     <li className="Card">
-      <img className="Card__photo" src={photo1} alt="Services" />
+      <div className="Card__photo-box">
+        <img className="Card__photo" src={photo1} alt="Services" />
+      </div>
       <p className="Card__name">City guide</p>
     </li>
   );
