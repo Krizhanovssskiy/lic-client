@@ -5,13 +5,14 @@ import UserView from '../UserView';
 import Features from '../Features';
 import UserMainInfo from '../UserMainInfo';
 import UserDetails from '../UserDetails';
+import UserContacts from '../UserContacts';
 
 const Content = () => {
   return (
     <div className="Content">
       <UserView />
       <Features />
-      <div>UserContacts</div>
+      <UserContacts />
       <UserMainInfo />
       <UserDetails />
     </div>

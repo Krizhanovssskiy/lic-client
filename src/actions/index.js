@@ -1,11 +1,12 @@
 import qs from 'qs';
 
 import lic from '../apis/lic';
+import history from '../history';
 import {
   SIGN_IN,
   SIGN_OUT,
   REGISTRATION,
-  AUTH,
+  AUTH
   // FETCH_SERVICES,
   // FETCH_SHOP,
   // FETCH_AUCTION,
@@ -39,13 +40,16 @@ export const registration = formValue => async dispatch => {
     method: 'POST',
     headers: { 'content-type': 'application/x-www-form-urlencoded' },
     data: qs.stringify(data),
-    url,
+    url
   };
   const response = await lic(options);
   dispatch({ type: REGISTRATION, payload: response.data });
+  // Programmatic navigation to
+  // get the user back to the root route
+  history.push('/');
 };
 
-export const auth = formValue=> async dispatch => {
+export const auth = formValue => async dispatch => {
   const data = {
     key: 'yRQ2eGNJA45KfRO2',
     type: 'auth',
@@ -57,10 +61,13 @@ export const auth = formValue=> async dispatch => {
     method: 'POST',
     headers: { 'content-type': 'application/x-www-form-urlencoded' },
     data: qs.stringify(data),
-    url,
+    url
   };
   const response = await lic(options);
   dispatch({ type: AUTH, payload: response.data });
+  // Programmatic navigation to
+  // get the user back to the root route
+  history.push('/');
 };
 
 // export const fetchServices = () => {

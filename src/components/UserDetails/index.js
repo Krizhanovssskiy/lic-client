@@ -2,6 +2,7 @@ import './style.scss';
 
 import React from 'react';
 import SectionMenu from '../SectionMenu';
+import Portfolio from '../Portfolio';
 
 const UserDetails = () => {
   const titles = ['Portfolio', 'CV'];
@@ -10,6 +11,7 @@ const UserDetails = () => {
   return (
     <section className="UserDetails">
       <SectionMenu titles={titles} />
+      <Portfolio />
     </section>
     
   );

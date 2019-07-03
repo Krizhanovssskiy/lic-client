@@ -2,7 +2,7 @@ import { AUTH } from '../actions/types';
 
 const INITIAL_STATE = {
   auth: null,
-  authData: null
+  authData: {}
 };
 
 export default (state = INITIAL_STATE, action) => {

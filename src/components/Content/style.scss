@@ -1,11 +1,14 @@
 .Content {
-  margin: 5rem 10%;
+  margin: 5rem 8%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  // grid-template-rows: 1fr 60vh;
+  grid-gap: 2.4rem;
+  height: 80vh;
 
   & > * {
     background-color: var(--color-white);
     border-radius: 8px;
   }
 }
+

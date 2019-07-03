@@ -50,4 +50,10 @@
     width: 3rem;
     fill: var(--color-primary-dark); // TODO fix svg color!!!
   }
+
+  &__login {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-white);
+  }
 }
