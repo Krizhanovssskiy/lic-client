@@ -5,6 +5,7 @@ import {
   SIGN_IN,
   SIGN_OUT,
   REGISTRATION,
+  AUTH,
   // FETCH_SERVICES,
   // FETCH_SHOP,
   // FETCH_AUCTION,
@@ -12,6 +13,7 @@ import {
   // FETCH_CV
 } from './types';
 
+// Google Auth
 export const signIn = userId => {
   return {
     type: SIGN_IN,
@@ -29,8 +31,8 @@ export const registration = formValue => async dispatch => {
   const data = {
     key: 'yRQ2eGNJA45KfRO2',
     type: 'registration',
-    username: 'mySubDomain',
-    email: formValue
+    username: 'mySubDomain', // fix this
+    email: formValue.username // fix this
   };
   const url = '';
   const options = {
@@ -41,6 +43,24 @@ export const registration = formValue => async dispatch => {
   };
   const response = await lic(options);
   dispatch({ type: REGISTRATION, payload: response.data });
+};
+
+export const auth = formValue=> async dispatch => {
+  const data = {
+    key: 'yRQ2eGNJA45KfRO2',
+    type: 'auth',
+    username: formValue.username,
+    pass: formValue.pass
+  };
+  const url = '';
+  const options = {
+    method: 'POST',
+    headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    data: qs.stringify(data),
+    url,
+  };
+  const response = await lic(options);
+  dispatch({ type: AUTH, payload: response.data });
 };
 
 // export const fetchServices = () => {

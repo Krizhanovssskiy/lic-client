@@ -6,7 +6,7 @@ import { registration } from '../../actions';
 import GoogleAuth from '../GoogleAuth';
 
 class Register extends Component {
-  state = { contact: '', isAgree: false };
+  state = { username: '', isAgree: false };
 
   onInputChange = event => {
     const target = event.target;
@@ -21,10 +21,12 @@ class Register extends Component {
   onFormSubmit = event => {
     event.preventDefault();
 
-    if (this.state.isAgree) {
-      this.props.registration(this.state.contact);
+    const { username, isAgree } = this.state;
+
+    if (isAgree && username) {
+      this.props.registration(this.state);
     } else {
-      console.log('check the checkbox');
+      console.log('check the form');
     }
   };
 
@@ -34,9 +36,9 @@ class Register extends Component {
         <h1 className="Register__header">Register</h1>
         <form onSubmit={this.onFormSubmit} className="Register__form">
           <input
-            name="contact"
+            name="username"
             onChange={this.onInputChange}
-            value={this.state.contact}
+            value={this.state.username}
             className="Register__input"
             type="text"
             placeholder="Your phone or email"
@@ -66,7 +68,6 @@ class Register extends Component {
             </button>
           </div>
         </form>
-        <hr />
         <GoogleAuth />
       </div>
     );
