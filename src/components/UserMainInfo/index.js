@@ -11,44 +11,76 @@ const UserMainInfo = () => {
       <p className="UserMainInfo__userspec">UX/UI Designer</p>
       <ul className="UserMainInfo__icon-container">
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon UserMainInfo__icon--active">
-            <use href={`${sprite}#icon-instagram`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon UserMainInfo__icon--active">
+                <use href={`${sprite}#icon-instagram`} />
+              </svg>
+            </div>
+          </div>
         </li>
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon">
-            <use href={`${sprite}#icon-facebook`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon">
+                <use href={`${sprite}#icon-facebook`} />
+              </svg>
+            </div>
+          </div>
         </li>
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon UserMainInfo__icon--active">
-            <use href={`${sprite}#icon-twitter`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon UserMainInfo__icon--active">
+                <use href={`${sprite}#icon-twitter`} />
+              </svg>
+            </div>
+          </div>
         </li>
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon UserMainInfo__icon--active">
-            <use href={`${sprite}#icon-telegram`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon UserMainInfo__icon--active">
+                <use href={`${sprite}#icon-telegram`} />
+              </svg>
+            </div>
+          </div>
         </li>
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon">
-            <use href={`${sprite}#icon-whatsapp`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon">
+                <use href={`${sprite}#icon-whatsapp`} />
+              </svg>
+            </div>
+          </div>
         </li>
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon">
-            <use href={`${sprite}#icon-linkedin`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon">
+                <use href={`${sprite}#icon-linkedin`} />
+              </svg>
+            </div>
+          </div>
         </li>
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon">
-            <use href={`${sprite}#icon-vk`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon">
+                <use href={`${sprite}#icon-vk`} />
+              </svg>
+            </div>
+          </div>
         </li>
         <li className="UserMainInfo__icon-box">
-          <svg className="UserMainInfo__icon">
-            <use href={`${sprite}#icon-share`} />
-          </svg>
+          <div className="UserMainInfo__icon-inner-box">
+            <div className="UserMainInfo__icon-innerest-box">
+              <svg className="UserMainInfo__icon">
+                <use href={`${sprite}#icon-share`} />
+              </svg>
+            </div>
+          </div>
         </li>
       </ul>
       <div className="UserMainInfo__contact-container">
