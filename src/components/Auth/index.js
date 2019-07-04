@@ -2,6 +2,7 @@ import './style.scss';
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { auth } from '../../actions';
 
 import GoogleAuth from '../GoogleAuth';
@@ -59,7 +60,7 @@ class Auth extends Component {
           <p className="Auth__text">or</p>
 
           <div className="Auth__footer">
-            <span className="Auth__link">Create new account</span>
+            <Link to="/register" className="Auth__link">Create new account</Link>
             <button type="submit" className="Auth__footer-login">
               Login
             </button>

@@ -32,8 +32,7 @@ export const registration = formValue => async dispatch => {
   const data = {
     key: 'yRQ2eGNJA45KfRO2',
     type: 'registration',
-    username: 'mySubDomain', // fix this
-    email: formValue.username // fix this
+    username: formValue.username, // fix this
   };
   const url = '';
   const options = {

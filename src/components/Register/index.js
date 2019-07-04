@@ -1,6 +1,7 @@
 import './style.scss';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { registration } from '../../actions';
 
 import GoogleAuth from '../GoogleAuth';
@@ -24,7 +25,7 @@ class Register extends Component {
     const { username, isAgree } = this.state;
 
     if (isAgree && username) {
-      this.props.registration(this.state);
+      this.props.registration({ username: this.state.username });
     } else {
       console.log('check the form');
     }
@@ -62,7 +63,7 @@ class Register extends Component {
           </label>
           <span className="Register__terms-link">Terms and Conditions</span>
           <div className="Register__footer">
-            <span className="Register__footer-login">Log in</span>
+            <Link to="/login" className="Register__footer-login">Log in</Link>
             <button type="submit" className="Register__footer-register">
               Register
             </button>

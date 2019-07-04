@@ -8,8 +8,12 @@
 
   &__button {
     border: none;
-    background-color: var(--color-white);
+    background-color: transparent;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__icon {
@@ -21,7 +25,6 @@
 
   &__icon-magnifying-glass {
     fill: var(--color-grey-dark);
-    
   }
 
   &__input {
@@ -29,16 +32,23 @@
     font-family: inherit;
     font-size: inherit;
     color: inherit;
-    background-color: var(--color-white);
+    background-color: var(--color-grey);
     border: none;
     padding: 0.7rem 2rem;
     border-radius: 100px;
-    width: 100%;
+    width: 90%;
     margin-right: -2.6rem;
     margin-left: -2.6rem;
     padding-right: 3.6rem;
     padding-left: 3.6rem;
     z-index: 10;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-white);
+    }
   }
 
   &__icon-cross {

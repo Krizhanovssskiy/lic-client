@@ -6,7 +6,7 @@ import React from 'react';
 
 const Search = () => {
   return (
-    <form action="#" className="Search">
+    <form className="Search">
       <button className="Search__button">
         <svg className="Search__icon Search__icon-magnifying-glass">
           <use href={`${sprite}#icon-magnifying-glass`} />
