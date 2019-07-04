@@ -1,3 +1,5 @@
+@import '../../scss/mixins.scss';
+
 .SectionMenu {
   &__title-container {
     display: flex;
@@ -26,8 +28,6 @@
   }
 
   &__title {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
+    @include sectionTitile;
   }
 }
