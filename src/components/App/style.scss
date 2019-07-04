@@ -13,6 +13,8 @@
   --color-grey-dark: #c0b8c4;
   --color-purple-1: #fb598f;
   --color-purple-2: #b92df5;
+  --grid-gap-main: 2.4rem;
+  --padding-section: 1.4rem;
 }
 
 * {
@@ -41,7 +43,7 @@ body {
 }
 
 section {
-  padding: 1.4rem;
+  padding: var(--padding-section);
 }
 
 ul {

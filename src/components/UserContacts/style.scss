@@ -5,17 +5,16 @@
   grid-column: 3 / 4;
 
   &__header {
+    padding-bottom: calc(1.4rem + 2px);
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   &__title-box {
-    // width: 33.3333%;
+    padding-bottom: 0.2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
   }
 
   &__title {
@@ -41,6 +40,10 @@
 
   &__icon--active {
     fill: var(--color-primary-dark);
+  }
+
+  &__list {
+    margin-top: calc(var(--grid-gap-main) + var(--padding-section) * 2);
   }
 
 }

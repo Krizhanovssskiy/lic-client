@@ -4,11 +4,12 @@
   &__title-container {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 1.4rem;
+
   }
 
   &__title-box {
     border-bottom: 2px solid var(--color-grey-dark);
-    margin-bottom: 1.4rem;
     padding-bottom: 0.2rem;
     color: var(--color-grey-dark);
     cursor: pointer;

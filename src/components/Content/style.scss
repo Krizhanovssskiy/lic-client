@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   // grid-template-rows: 1fr 60vh;
-  grid-gap: 2.4rem;
+  grid-gap: var(--grid-gap-main);
   height: 80vh;
 
   & > * {

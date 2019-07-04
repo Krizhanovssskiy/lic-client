@@ -3,6 +3,8 @@ import './style.scss';
 import sprite from '../../img/sprite.svg';
 
 import React from 'react';
+import UserContact from '../UserContact';
+import CardsList from '../CardsList';
 
 const UserContacts = () => {
   return (
@@ -27,6 +29,15 @@ const UserContacts = () => {
           </svg>
         </div>
       </div>
+      <CardsList />
+      <ul className="UserContacts__list">
+        <UserContact />
+        <UserContact />
+        <UserContact />
+        <UserContact />
+        <UserContact />
+        <UserContact />
+      </ul>
     </section>
   );
 };

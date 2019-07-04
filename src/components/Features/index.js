@@ -1,8 +1,8 @@
 import './style.scss';
 
 import React from 'react';
-import Card from '../Card';
 import SectionMenu from '../SectionMenu';
+import CardsList from '../CardsList';
 
 const Features = () => {
   const titles = ['Services', 'Shop', 'Auction'];
@@ -10,14 +10,7 @@ const Features = () => {
   return (
     <section className="Features">
       <SectionMenu titles={titles} />
-      <div className="Features__photo-container hide-scroll">
-        <ul className="Features__photo-list">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </ul>
-      </div>
+      <CardsList />
     </section>
   );
 };
